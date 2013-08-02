@@ -47,17 +47,6 @@ var Bowler = Backbone.Model.extend({
     }
 });
 
-var Inning = Backbone.Model.extend({
-    defaults: {
-        overs: new Overs(),
-        batters: new Batters(),
-        bowlers: new Bowlers()
-    },
-    start: function(){
-
-    }
-});
-
 var Over = Backbone.model.extend({
     defaults: {
         wickets: 0,
