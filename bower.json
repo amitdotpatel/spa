@@ -1,0 +1,14 @@
+{
+    "name": "scorecard",
+    "version": "0.1",
+    "main": "js/app.js",
+    "dependencies": {
+        "backbone": "1.0.0",
+        "jquery": "~1.9.1",
+        "underscore":"1.4.4",
+        "jquery-ui": "~1.10.3",
+        "bootstrap": "2.3.1",
+        "requirejs": "~2.1.4",
+        "requirejs-text": "~2.0.5"
+    }
+}
