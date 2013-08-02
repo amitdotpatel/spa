@@ -47,7 +47,7 @@ var Bowler = Backbone.Model.extend({
     }
 });
 
-var Over = Backbone.model.extend({
+var Over = Backbone.Model.extend({
     defaults: {
         wickets: 0,
         runs: 0,
@@ -78,7 +78,7 @@ var Over = Backbone.model.extend({
     }
 });
 
-var Ball = Backbone.model.extend({
+var Ball = Backbone.Model.extend({
     defaults: {
         striker: '',
         nonStriker: '',
