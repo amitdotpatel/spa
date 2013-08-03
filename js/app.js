@@ -11,3 +11,14 @@
 //bowler view overs maidens runs wickets
 //summary view at the bottom
 //screen has 2 parts, 70% for the score batsman, 30 % to the bowlers
+var inningsView = new InningView();
+var batsmanStatView = new BatsmanStatsView();
+var bowlerStatView = new BowlerStatsView();
+var summaryView = new SummaryView();
+inningsView.$el.find('#ballingScore ul').html(this.bowlerStatView.el);
+inningsView.$el.find('#battingScore ul').html(this.batsmanStatView.el);
+/*this.bowlerStatView = new BowlerStatsView();
+this.$el.find('#bowlingScore ul').html(this.bowlerStatView.el);
+this.summaryView = new SummaryView();
+this.$el.find('#summaryView').html(this.summaryView.el);*/
+//inningsView.initialize();

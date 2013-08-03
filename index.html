@@ -16,12 +16,35 @@
 <body>
 <div class="container-fluid">
     <header>
+        <div class="row-fluid top-and-bottom-bar">
+            <div class="span10 alt-color-bar top-and-bottom-bar"></div>
+        </div>
+        <div class="row-fluid">
+            <div class="navbar">
+                <div class="navbar-inner">
+                    <div>Scoreboard</div>
+                </div>
+            </div>
+        </div>
     </header>
     <section class="row-fluid" id="app-contents">
+        <div class="span12" id="displayScorecards">
+        </div>
     </section>
     <footer>
     </footer>
 </div>
 </body>
+<script src="js/models/Bowler.js"></script>
+<script src="js/models/Batsman.js"></script>
+<script src="js/models/Ball.js"></script>
+<script src="js/models/Over.js"></script>
+<script src="js/collections/Batters.js"></script>
+<script src="js/collections/Bowlers.js"></script>
+<script src="js/collections/Inning.js"></script>
+<script src="js/views/BatsmanStatsView.js"></script>
+<script src="js/views/BowlerStatsView.js"></script>
+<script src="js/views/SummaryView.js"></script>
+<script src="js/views/InningView.js"></script>
 <script src="js/app.js"></script>
 </html>
