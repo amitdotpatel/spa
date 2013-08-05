@@ -1,5 +1,5 @@
-var Inning = Backbone.Collection.extend({
-    model: Over,
+var Overs = Backbone.Collection.extend({
+    model: Ball,
     getTotalOvers: function() {
         return this.reduce(function(mem, over) {
             if(over.isDone()) {
@@ -25,8 +25,5 @@ var Inning = Backbone.Collection.extend({
         return this.reduce(function(mem, over){
             return mem + over.wickets;
         }, 0);
-    },
-    start: function() {
-        console.log('Started the innings');
     }
 });

@@ -1,18 +1,26 @@
-var bowlerTmpl = '<span class="ballerId">Some Baller</span>\
-<span id="ballerOvers">10</span>\
-<span id="ballerMaidens">0</span>\
-<span id="ballerRuns">100</span>\
-<span id="ballerWickets">0</span>';
+var bowlerTmpl = '<span class="ballerId"><%= id %></span>' +
+    '<span class="ballerOvers"><%= overs %></span>' +
+    '<span class="ballerMaidens"><%= maidens %></span>' +
+    '<span class="ballerRuns"><%= runs %></span>' +
+    '<span class="ballerWickets"><%= wickets %></span>';
 
 var BowlerStatsView = Backbone.View.extend({
     tagName: 'li',
     template: _.template(bowlerTmpl),
-    initialize: function(){
+    initialize: function(options){
+        if(options.bowler) {
+            var self = this;
+            self.bowler = options.bowler;
+            self.bowler.on('change', function(model){
+                self.render();
+            });
+        }
         this.render();
     },
     render: function(){
-        this.$el.html(this.template(this.model));
+        var b = this.bowler.toJSON();
+        console.log(b);
+        this.$el.html(this.template(b));
     },
-    handleClick: function(){}
-
+    bowler: {}
 });

@@ -12,6 +12,7 @@
     <script src="js/components/jquery-ui/ui/minified/jquery-ui.min.js"></script>
     <script src="js/components/backbone/backbone-min.js"></script>
     <script src="js/components/bootstrap/docs/assets/js/bootstrap.min.js"></script>
+    <script src="js/utils.js"></script>
 </head>
 <body>
 <div class="container-fluid">
@@ -30,21 +31,28 @@
     <section class="row-fluid" id="app-contents">
         <div class="span12" id="displayScorecards">
         </div>
+        <div class="span12" id="bowlerForm">
+            Bowler Form
+        </div>
     </section>
     <footer>
     </footer>
 </div>
 </body>
+<script src='js/data/batsmen.js'></script>
+<script src="js/data/bowlers.js"></script>
 <script src="js/models/Bowler.js"></script>
 <script src="js/models/Batsman.js"></script>
 <script src="js/models/Ball.js"></script>
 <script src="js/models/Over.js"></script>
+<script src="js/models/Summary.js"></script>
+<script src="js/collections/Balls.js"></script>
 <script src="js/collections/Batters.js"></script>
 <script src="js/collections/Bowlers.js"></script>
-<script src="js/collections/Inning.js"></script>
 <script src="js/views/BatsmanStatsView.js"></script>
 <script src="js/views/BowlerStatsView.js"></script>
 <script src="js/views/SummaryView.js"></script>
 <script src="js/views/InningView.js"></script>
+<script src="js/views/BowlerFormView.js"></script>
 <script src="js/app.js"></script>
 </html>

@@ -1,3 +1,6 @@
 var Batters = Backbone.Collection.extend({
-    model: Batsman
+    model: Batsman,
+    getRandom: function() {
+        return this.models[getRandom()];
+    }
 });

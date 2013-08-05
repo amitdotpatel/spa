@@ -31,4 +31,7 @@ input[readonly] {
   margin: 0 5px 0 5px;
   display: inline-block;
 }
+body ul li span {
+    padding: 10px;
+}
 
