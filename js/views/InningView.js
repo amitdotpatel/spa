@@ -63,7 +63,6 @@ var InningView = Backbone.View.extend({
     },
     updateOvers: function(ball){
         this.currentOver.updateBall(ball);
-        this.updateBowlerStats(ball);
         if(this.currentOver.isDone()){
             this.summaryView.update(this.currentOver);
             this.overs.push(this.currentOver);

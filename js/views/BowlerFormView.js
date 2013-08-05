@@ -39,9 +39,9 @@ var BowlerFormView = Backbone.View.extend({
             nonStriker: this.$el.find('#nonStrikerSelect option:selected').val(),
             bowler: this.$el.find('#bowlerSelect option:selected').val(),
             wickets: this.$el.find('#wicket option:selected').val(),
-            runs: this.$el.find('input[name="runs"]').val(),
-            over: this.$el.find('input[name="overNumber"]').val(),
-            number: this.$el.find('input[name="ballNumber"]').val()
+            runs: parseInt(this.$el.find('input[name="runs"]').val()),
+            over: parseInt(this.$el.find('input[name="overNumber"]').val()),
+            number: parseInt(this.$el.find('input[name="ballNumber"]').val())
         });
         console.log(newBall);
         this.parentView.ballsCollection.add(newBall);

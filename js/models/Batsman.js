@@ -15,10 +15,10 @@ var Batsman = Backbone.Model.extend({
         }
     },
     playBall: function(ball) {
-        if(ball.get('wickets')) {
+        if(ball.get('wickets') == 'true') {
             this.set('isBatting', false);
         } else {
-            this.set('runs',thi.get('runs') + ball.get('runs'));
+            this.set('runs', this.get('runs') + ball.get('runs'));
         }
         this.set('balls', this.get('balls') + 1);
         if(this.get('balls') > 0) {
